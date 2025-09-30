@@ -13,6 +13,16 @@
     <input id="name" type="text" name="name">
     <button type="submit" onclick="return warnUser()">Hello</button>
 </form>
+
+<form action="hello-servlet" method="post">
+    <label for="start">Start:</label>
+    <input id="start" type="number" name="start">
+    <label for="end">End:</label>
+    <input id="end" type="number" name="end">
+    <label for="step">Step:</label>
+    <input id="step" type="number" name="step" step="0.01">
+    <input type="submit" value="Tabulate">
+</form>
 <script type="text/javascript">
     function warnUser() {
         const field = document.getElementById("name");
